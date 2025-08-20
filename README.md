@@ -1,7 +1,44 @@
-# E-CommerceBackEnd
-.env
-MONGODB_URL="mongodb+srv://user:gnh9tg1PmOzqpcZ3@cluster0.w4wajhq.mongodb.net/shop?retryWrites=true&w=majority"
-PASS_SEC = Lama
-JWT_SEC = lama
-STRIPE_KEY = sk_test_51NZxuNGduudlmOXI24DEB8u6aH5WMVcK7e2Q0dhWYdTlebLaPIgaj8ocuCKvyYfpIKgpNDvGxNwHXqKpb4d3uWZu00XgVikQ4Y
-start : npm start
+# 🛒 Ecommerce CMS Backend
+
+This is the **backend service** for the React Ecommerce CMS project.  
+It provides secure **REST APIs** to manage users, products, orders, banners, feedback, and analytics for the ecommerce system.  
+The backend integrates with **MongoDB** for data persistence and **Firebase Storage** for product image storage.
+
+## 🚀 Features
+
+- **Authentication & Authorization**
+    - Admin login with JWT-based authentication.
+    - Role-based access control for protected routes.
+
+- **User Management**
+    - CRUD operations for users.
+    - Track new user registrations.
+
+- **Product Management**
+    - CRUD operations for products.
+    - Store product images in **Firebase Storage**.
+
+- **Transaction Management**
+    - Record and manage customer orders.
+    - Track new and completed transactions.
+
+- **Banner Management**
+    - Upload and manage promotional banners.
+
+- **Feedback Management**
+    - Collect and view customer feedback.
+
+- **Analytics**
+    - Monthly revenue statistics.
+    - Total products sold.
+    - New users count.
+    - Latest transactions.
+
+## 🧰 Tech Stack
+
+- **Node.js + Express.js** – Backend framework
+- **MongoDB + Mongoose** – Database
+- **Firebase Storage** – Image storage
+- **JWT (JSON Web Tokens)** – Authentication
+- **bcrypt.js** – Password hashing
+- **Cors & Helmet** – Security  
